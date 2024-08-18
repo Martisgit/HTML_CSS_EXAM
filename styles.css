@@ -202,12 +202,19 @@ div title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.more-products div {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 400;
 }
 
 .item-color {
   text-decoration: none;
   color: black;
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 400;
 }
 
 .shop-button {
@@ -308,6 +315,110 @@ div title {
   font-size: 0.85;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.about h1 {
+  font-size: calc(2.3rem + 1.5vw);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  scale: 1.2;
+}
+
+.about h2 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.about p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.img-background {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background-image: url("https://img.freepik.com/free-vector/yellow-white-watercolor-background_91008-123.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 3rem;
+  position: relative;
+}
+
+.box-size {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 5rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.round-button {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.round-button:hover {
+  background-color: #020202;
+}
+
+.arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+}
+
+.left-arrow {
+  transform: rotate(135deg); /* Create left arrow */
+}
+
+.right-arrow {
+  transform: rotate(-45deg); /* Create right arrow */
+}
+
 .first-btn {
   border: none;
   width: 15%;
@@ -397,6 +508,10 @@ div title {
 }
 
 @media only screen and (max-width: 768px) {
+  .about img {
+    max-width: 150px;
+  }
+
   .burger-btn-wrapper {
     display: block;
   }
