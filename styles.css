@@ -8,6 +8,31 @@
   font-style: normal;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* State after scroll trigger */
+.fade-in.show {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+body * {
+  animation: fadeIn 1s ease-in-out;
+}
+
 html,
 body {
   width: 100%;
@@ -276,6 +301,9 @@ section h4 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-delay: 0.0888889s;
 }
 
 .main-text {
