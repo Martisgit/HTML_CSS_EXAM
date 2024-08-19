@@ -590,45 +590,6 @@ section h4 {
   color: white;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .about img {
-    max-width: 150px;
-  }
-
-  .burger-btn-wrapper {
-    display: block;
-  }
-
-  header nav ul {
-    display: none;
-  }
-
-  .login {
-    display: none;
-  }
-
-  .product-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: auto;
-  }
-
-  .product-wrapper img {
-    width: 450px;
-    max-width: 450px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    object-fit: contain;
-  }
-
-  .section-img {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
 @media only screen and (max-width: 1440px) {
   .dog-img2 {
     gap: 0rem;
@@ -648,34 +609,6 @@ section h4 {
     margin-right: 0rem;
   }
 }
-
-/* Tablet (iPads, Tablets, small desktops) */
-/* @media only screen and (max-width: 1200px) and (min-width: 768px) { */
-/* Adjustments for tablet screens */
-/* .main {
-    padding: 4rem;
-  }
-
-  .footer {
-    padding: 3rem 5rem;
-  }
-
-  .footer-center {
-    margin-right: 5rem;
-  }
-
-  .footer-right {
-    margin-right: 5rem;
-  }
-
-  .dog-img2 {
-    padding: 0rem 5rem;
-  }
-
-  .final-section h3 {
-    font-size: calc(2rem + 1vw);
-  }
-} */
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -831,6 +764,12 @@ section h4 {
     justify-content: left;
   }
 
+  .block {
+    display: flex;
+    border-top: 1px solid black;
+    margin: 1rem 0rem;
+  }
+
   /* .mobile-center {
     margin-right: 4rem;
     text-align: center;
@@ -928,8 +867,37 @@ section h4 {
 
   /* footer */
   .footer {
+    display: flex;
+    background-color: #ffe8ba;
+    color: black;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-content {
+    display: flex;
     flex-direction: column;
     padding: 2rem;
+  }
+
+  .footer-left {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0rem;
+  }
+
+  .footer-center ul {
+    text-align: left;
   }
 
   .footer-left,
@@ -942,11 +910,11 @@ section h4 {
     flex-direction: column;
   }
 
-  .footer-center ul {
-    text-align: center;
-  }
-
   .footer-center ul li {
     margin-bottom: 0.5rem;
+  }
+
+  .footer-made-with {
+    display: none;
   }
 }
