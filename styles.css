@@ -39,11 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-.bg-wrapper,
-section {
-  width: 100%;
-}
-
 main {
   height: auto;
   background-color: #ffe8ba;
