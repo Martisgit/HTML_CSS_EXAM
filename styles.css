@@ -630,6 +630,14 @@ section h4 {
 } */
 
 @media only screen and (max-width: 1440px) {
+  .dog-img2 {
+    gap: 0rem;
+    padding: 0rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .newsletter-form {
     display: flex;
     flex-direction: column;
