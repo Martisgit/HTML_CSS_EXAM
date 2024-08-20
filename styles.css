@@ -527,7 +527,7 @@ section h4 {
   color: black;
   font-size: 1.3rem;
 }
-
+/* 
 .footer-made-with {
   font-size: 0.8rem;
 }
@@ -535,7 +535,7 @@ section h4 {
 .footer-made-with a {
   color: black;
   text-decoration: underline;
-}
+} */
 
 .footer-center {
   display: flex;
@@ -937,8 +937,7 @@ section h4 {
   .footer-center ul li {
     margin-bottom: 0.5rem;
   }
-
-  .footer-made-with {
+  /* .footer-made-with {
     display: none;
-  }
+  } */
 }
