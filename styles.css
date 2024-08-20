@@ -20,7 +20,8 @@
 
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: 1s ease-in-out;
+  will-change: opacity;
 }
 
 /* State after scroll trigger */
@@ -292,9 +293,6 @@ section h4 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  transition-timing-function: ease;
-  transition-duration: 0.4s;
-  transition-delay: 0.0888889s;
 }
 
 .main-text {
