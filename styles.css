@@ -29,10 +29,6 @@
   animation: fadeIn 1s ease-in-out;
 }
 
-body * {
-  animation: fadeIn 1s ease-in-out;
-}
-
 html,
 body {
   width: 100%;
@@ -760,11 +756,14 @@ section h4 {
     align-items: flex-start;
     justify-items: flex-start;
     position: relative;
+    grid-template-columns: 2fr 2fr;
   }
 
   .dog-img2 .product-info {
     position: relative;
     text-align: center;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .dog-img2 .product {
